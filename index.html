@@ -14,12 +14,11 @@
         <script type="text/javascript" src="./renxi/love.js" charset="utf-8"></script>
 
 </head>
-    <body>
- 
-			<audio autoplay="autoplay" >
-					<source src="music/nhac.mp3" type="audio/mp3" />
-            </audio> 
-
+<body>
+    
+    
+    <audio id="player" controls hidden><source src="music/nhac.mp3" type="audio/mp3"></audio>
+    </iframe> 
           
 
         <div id="main">
@@ -46,9 +45,6 @@
             </div>
             
         </div>
-    
-    <script>
-    </script>
 
     <script>
     (function(){
@@ -210,5 +206,9 @@
 <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
 <p>Contact: <a href="https://www.facebook.com/yayaKhanh" target="_blank">Dương Duy Khánh</a></p>
 </div>
+<script>
+    let x = document.getElementById("player"); 
+    x.play();
+</script>
 </body>
 </html>
